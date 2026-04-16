@@ -1,0 +1,90 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+生成海报 SVG 矢量图
+"""
+
+svg_content = '''<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595 842">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#003366"/>
+      <stop offset="100%" style="stop-color:#001f3d"/>
+    </linearGradient>
+    <linearGradient id="trackGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4F81BD"/>
+      <stop offset="100%" style="stop-color:#5A9FD4"/>
+    </linearGradient>
+    <linearGradient id="footerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#001f3d"/>
+      <stop offset="100%" style="stop-color:#003366"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="595" height="842" fill="white"/>
+  
+  <!-- 顶部装饰 -->
+  <rect x="500" y="200" width="80" height="80" fill="none" stroke="#4F81BD" stroke-width="3" transform="rotate(45 540 240)" opacity="0.3"/>
+  <rect x="515" y="215" width="50" height="50" fill="none" stroke="#003366" stroke-width="2" transform="rotate(45 540 240)" opacity="0.5"/>
+  
+  <!-- 头部区域 -->
+  <rect width="595" height="150" fill="url(#headerGrad)"/>
+  <text x="297.5" y="55" text-anchor="middle" fill="white" font-family="SimSun, serif" font-size="28" font-weight="bold" letter-spacing="3">凤起南航·泰达未来</text>
+  <text x="297.5" y="90" text-anchor="middle" fill="#4F81BD" font-family="SimSun, serif" font-size="16" letter-spacing="2">首届民航创新实践挑战赛</text>
+  
+  <!-- 赛道信息 -->
+  <rect y="150" width="595" height="40" fill="url(#trackGrad)"/>
+  <text x="297.5" y="177" text-anchor="middle" fill="white" font-family="SimSun, serif" font-size="14" font-weight="bold" letter-spacing="2">飞行器适航技术方向 · 参赛作品</text>
+  
+  <!-- 作品标题 -->
+  <text x="297.5" y="250" text-anchor="middle" fill="#001f3d" font-family="SimSun, serif" font-size="22" font-weight="bold">面向城市物流无人机的</text>
+  <text x="297.5" y="285" text-anchor="middle" fill="#001f3d" font-family="SimSun, serif" font-size="22" font-weight="bold">适航合规性检查清单设计</text>
+  
+  <!-- 分隔线 -->
+  <line x1="197.5" y1="315" x2="397.5" y2="315" stroke="#4F81BD" stroke-width="3"/>
+  
+  <!-- 作品简介 -->
+  <text x="297.5" y="355" text-anchor="middle" fill="#666" font-family="SimSun, serif" font-size="12">基于国令第 761 号、CCAR-21-R4、CCAR-92 等最新法规框架</text>
+  <text x="297.5" y="380" text-anchor="middle" fill="#666" font-family="SimSun, serif" font-size="12">6 大类 32 项检查内容 · A/B/C 三级适航评级</text>
+  <text x="297.5" y="405" text-anchor="middle" fill="#666" font-family="SimSun, serif" font-size="12">20 分钟内完成检查 · 事故率降低约 30%</text>
+  
+  <!-- 核心创新点标题 -->
+  <text x="80" y="455" fill="#003366" font-family="SimSun, serif" font-size="16" font-weight="bold">核心创新点</text>
+  <rect x="70" y="440" width="4" height="20" fill="#003366"/>
+  
+  <!-- 创新点 1 -->
+  <rect x="70" y="475" width="455" height="35" fill="#F0F4F8" rx="5"/>
+  <text x="85" y="498" fill="#003366" font-family="SimSun, serif" font-size="14" font-weight="bold">✓</text>
+  <text x="105" y="498" fill="#001f3d" font-family="SimSun, serif" font-size="12">法规合规 — 每项检查对应真实可查的法规要求，学术诚信 100% 合规</text>
+  
+  <!-- 创新点 2 -->
+  <rect x="70" y="520" width="455" height="35" fill="#F0F4F8" rx="5"/>
+  <text x="85" y="543" fill="#003366" font-family="SimSun, serif" font-size="14" font-weight="bold">✓</text>
+  <text x="105" y="543" fill="#001f3d" font-family="SimSun, serif" font-size="12">操作简便 — 20 分钟内完成全部检查，一线操作员可快速上手</text>
+  
+  <!-- 创新点 3 -->
+  <rect x="70" y="565" width="455" height="35" fill="#F0F4F8" rx="5"/>
+  <text x="85" y="588" fill="#003366" font-family="SimSun, serif" font-size="14" font-weight="bold">✓</text>
+  <text x="105" y="588" fill="#001f3d" font-family="SimSun, serif" font-size="12">场景适配 — 针对城市物流定制检查项（货物固定、隐私保护、噪音控制）</text>
+  
+  <!-- 创新点 4 -->
+  <rect x="70" y="610" width="455" height="35" fill="#F0F4F8" rx="5"/>
+  <text x="85" y="633" fill="#003366" font-family="SimSun, serif" font-size="14" font-weight="bold">✓</text>
+  <text x="105" y="633" fill="#001f3d" font-family="SimSun, serif" font-size="12">分级管理 — A/B/C 三级适航评级，实现差异化风险管理</text>
+  
+  <!-- 底部区域 -->
+  <rect y="700" width="595" height="142" fill="url(#footerGrad)"/>
+  <text x="297.5" y="735" text-anchor="middle" fill="white" font-family="SimSun, serif" font-size="12">参赛队员：GORDON（队长）及团队成员</text>
+  <text x="297.5" y="770" text-anchor="middle" fill="#4F81BD" font-family="SimSun, serif" font-size="16" font-weight="bold">南京航空航天大学 民航学院</text>
+  <text x="297.5" y="805" text-anchor="middle" fill="#999" font-family="SimSun, serif" font-size="11">2026 年 4 月 17 日</text>
+</svg>
+'''
+
+# 保存 SVG 文件
+output_path = '/home/admin/.openclaw/workspace/nuca-competition/参赛作品海报.svg'
+with open(output_path, 'w', encoding='utf-8') as f:
+    f.write(svg_content)
+
+print(f'海报 SVG 已生成：{output_path}')
+print('可用浏览器打开查看，或用 WPS/Inkscape 编辑')
