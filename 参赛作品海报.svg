@@ -50,22 +50,17 @@
   <!-- 创新点 1 -->
   <rect x="70" y="475" width="455" height="35" fill="#F0F4F8" rx="5"/>
   <text x="85" y="498" fill="#003366" font-family="SimSun, serif" font-size="14" font-weight="bold">✓</text>
-  <text x="105" y="498" fill="#001f3d" font-family="SimSun, serif" font-size="12">法规合规 — 每项检查对应真实可查的法规要求，学术诚信 100% 合规</text>
+  <text x="105" y="498" fill="#001f3d" font-family="SimSun, serif" font-size="12">操作简便 — 20 分钟内完成全部检查，一线操作员可快速上手</text>
   
   <!-- 创新点 2 -->
   <rect x="70" y="520" width="455" height="35" fill="#F0F4F8" rx="5"/>
   <text x="85" y="543" fill="#003366" font-family="SimSun, serif" font-size="14" font-weight="bold">✓</text>
-  <text x="105" y="543" fill="#001f3d" font-family="SimSun, serif" font-size="12">操作简便 — 20 分钟内完成全部检查，一线操作员可快速上手</text>
+  <text x="105" y="543" fill="#001f3d" font-family="SimSun, serif" font-size="12">场景适配 — 针对城市物流定制检查项（货物固定、隐私保护、噪音控制）</text>
   
   <!-- 创新点 3 -->
   <rect x="70" y="565" width="455" height="35" fill="#F0F4F8" rx="5"/>
   <text x="85" y="588" fill="#003366" font-family="SimSun, serif" font-size="14" font-weight="bold">✓</text>
-  <text x="105" y="588" fill="#001f3d" font-family="SimSun, serif" font-size="12">场景适配 — 针对城市物流定制检查项（货物固定、隐私保护、噪音控制）</text>
-  
-  <!-- 创新点 4 -->
-  <rect x="70" y="610" width="455" height="35" fill="#F0F4F8" rx="5"/>
-  <text x="85" y="633" fill="#003366" font-family="SimSun, serif" font-size="14" font-weight="bold">✓</text>
-  <text x="105" y="633" fill="#001f3d" font-family="SimSun, serif" font-size="12">分级管理 — A/B/C 三级适航评级，实现差异化风险管理</text>
+  <text x="105" y="588" fill="#001f3d" font-family="SimSun, serif" font-size="12">分级管理 — A/B/C 三级适航评级，实现差异化风险管理</text>
   
   <!-- 底部区域 -->
   <rect y="700" width="595" height="142" fill="url(#footerGrad)"/>
