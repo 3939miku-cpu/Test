@@ -70,8 +70,9 @@ svg_content = '''<?xml version="1.0" encoding="UTF-8"?>
   
   <!-- 底部区域 -->
   <rect y="700" width="595" height="142" fill="url(#footerGrad)"/>
-  <text x="297.5" y="750" text-anchor="middle" fill="white" font-family="SimSun, serif" font-size="14">参赛队员：032580219 王徐嘉</text>
-  <text x="297.5" y="785" text-anchor="middle" fill="#4F81BD" font-family="SimSun, serif" font-size="16" font-weight="bold">南京航空航天大学</text>
+  <text x="297.5" y="735" text-anchor="middle" fill="white" font-family="SimSun, serif" font-size="14">指导老师：李维</text>
+  <text x="297.5" y="765" text-anchor="middle" fill="white" font-family="SimSun, serif" font-size="14">参赛队员：032580219 王徐嘉</text>
+  <text x="297.5" y="800" text-anchor="middle" fill="#4F81BD" font-family="SimSun, serif" font-size="16" font-weight="bold">南京航空航天大学</text>
 </svg>
 '''
 
