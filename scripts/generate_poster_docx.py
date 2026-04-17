@@ -132,6 +132,9 @@ def create_poster():
     
     p = add_shaded_paragraph(doc, " ", NUAA_DARK, WHITE, size=8)
     
+    p = add_shaded_paragraph(doc, "指导老师：李维", NUAA_DARK, WHITE, size=12)
+    p.paragraph_format.space_after = Pt(10)
+    
     p = add_shaded_paragraph(doc, "参赛队员：GORDON（队长）及团队成员", NUAA_DARK, WHITE, size=12)
     p.paragraph_format.space_after = Pt(10)
     
